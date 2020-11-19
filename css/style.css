@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    background-color: #1a1c20;
+    font-family: OpenSans;
+    overflow-x: hidden;
+    color: #e8e8e8;
+}
+
+section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.sec {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.sec1 {
+    background-image: url('../media/bg2.jpg');
+}
+.blackout {
+    position: absolute;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: opacity(0.5);
+}
+header {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    backdrop-filter: blur(5px);
+    background-color: #00000077;
+    z-index: 1000;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+.menu a {
+    text-decoration: none;
+    color: #e8e8e8;
+    font-size: 18px;
+    margin-right: 15px;
+}
+.menu a:hover {
+    border-bottom: solid 1px #e8e8e8;
+}
+.social {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+.social-link {
+    display: block;
+    width: 25px;
+    height: 25px;
+    padding: 3px 1px;
+    margin-left: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    border-top: 1px solid rgba(0, 0, 0, 0);
+    transition: 0.3s border ease-in;
+    z-index: 5;
+}
+.social-link-img {
+    width: 25px;
+    height: 25px;
+}
+.logo {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img {
+    width: 60%;
+    height: 60%;
+}
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #52057b;
+    font-size: 40px;
+    position: relative;
+    width: 100vw;
+    height: 30vh;
+}
+.sec2 {
+    background-image: url('../media/photos/8M9A1417.jpg');
+}
+.sec3 {
+    background-image: url('../media/photos/8M9A1326.jpg');
+}
+.sec4 {
+    background-image: url('../media/photos/8M9A1296.jpg');
+}
+.sec5 {
+    background-image: url('../media/photos/8M9A1218.jpg');
+}
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.side1 {
+    display: flex;
+    width: 90%;
+    height: 100vh;
+}
+.side1-1 {
+    width: 40%;
+    margin: auto;
+}
+.side1-2 {
+    width: 60%;
+    margin: auto;
+}
+.side1-2 p {
+    font-size: 20px;
+}
+
+.side1-2 a {
+    font-size: 20px;
+    color:#BEDBBB;
+}
+
+.reg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reg-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+footer {
+    
+    position: relative;
+    background-image: url('../media/bg2.jpg');
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+}
+.footer div {
+    margin: 30px;
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../media/Open-Sans/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}  
+
+#msform {
+	width: 400px;
+	margin: auto;
+	text-align: center;
+	position: relative;
+}
+#msform fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+	
+	/*stacking fieldsets above each other*/
+	position: relative;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+#msform input, #msform textarea {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+}
+/*buttons*/
+#msform .action-button {
+	width: 100px;
+	background: #27AE60;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+/*headings*/
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+}
