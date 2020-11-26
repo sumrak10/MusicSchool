@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head> 
-    <!-- dfddsfsdfsf -->
+    <!-- git add .  -->
+    <!-- git commit -m ""  -->
+    <!-- git push -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Музыкальная школа</title>
@@ -13,8 +15,11 @@
         <header>
             <div class="menu">
                 <a href="#">Главная</a>
-                <a href="#">Запись</a>
+                <a href="#">Фото</a>
                 <a href="#">О нас</a>
+            </div>
+            <div class="record">
+                <a href="#reg">Записаться на курс</a>
             </div>
             <div class="social">
                 <!-- <a href="https://t.me/sumrak10" class="social-link">
@@ -32,22 +37,30 @@
             <img src="./media/logo.png" alt="logo">
         </div>
     </section>
-    <div class="section">
-        <p>Фотографии с последних концертов</p>
-        <img src="./media/smile1.png" alt="^^" width="70px" height="70px">
-    </div>
-    <section class="sec2 sec">
+    <section class="card-section">
+        <div class="card-box">
+            <a href="#reg" class="card card1">
+                <div class="card-image"></div>
+                <p>Записаться</p>
+            </a>
+            <a href="#reg" class="card card2">
+                <div class="card-image"></div>
+                <p>Записаться</p>
+            </a>
+            <a href="#reg" class="card card3">
+                <div class="card-image"></div>
+                <p>Записаться</p>
+            </a>
+            <a href="#reg" class="card card4">
+                <div class="card-image"></div>
+                <p>Записаться</p>
+            </a>
+        </div>
     </section>
-    <section class="sec3 sec">
-    </section>
-    <section class="sec4 sec">
-    </section>
-    <section class="sec5 sec">
-    </section>
-    <div class="section">
+    <!-- <div class="section">
         <p>А теперь немного о нас</p>
         <img src="./media/smile2.png" alt="^^" width="70px" height="70px">
-    </div>
+    </div> -->
     <section class="about">
         <div class="side1">
             <div class="side1-1">
@@ -69,7 +82,7 @@
         <p>Понравилось? Присоединяйся к нам!</p>
         <img src="./media/smile2.png" alt="^^" width="70px" height="70px">
     </div>
-    <section class="reg">
+    <section class="reg" id="reg">
         <div class="reg-area">
             <form id="msform" name="reg">
                 <!-- fieldsets -->
@@ -79,7 +92,14 @@
                   <input type="text" name="name" placeholder="Имя и фамилия" />
                   <input type="text" name="contact" placeholder="Телефон" />
                   <input type="text" name="email" placeholder="Почта" />
-                  <input type="text" name="instrument" placeholder="Инструмент" />
+                  <!-- <input type="text" name="instrument" placeholder="Инструмент" /> -->
+                  <select size="1" name="instrument">
+                    <option selected disabled>Выберите инструмент</option>
+                    <option value="Электрогитара">Электрогитара</option>
+                    <option value="Классика">Классика</option>
+                    <option value="Бас-гитара">Бас-гитара</option>
+                    <option value="Укулеле">Укулеле</option>
+                   </select>
                   <input type="submit" name="send" class="next action-button" value="Записаться!" />
                 </fieldset>
               </form>
