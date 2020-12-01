@@ -102,6 +102,17 @@ header {
     width: 60%;
     height: 60%;
 }
+.info {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 10px;
+}
+.info div {
+    margin-right: 30px;
+}
 .section {
     display: flex;
     align-items: center;
