@@ -11,10 +11,10 @@ document.forms.reg.onsubmit = function() {
     var contact = this.contact.value;
     var email = this.email.value;
     var instrument = this.instrument.value;
-    var link = "mailto:babaevi@mail.ru" //кому
+    var link = "mailto:musicmodule@mail.ru" //кому
              + "?cc=" + email //от кого
              + "&subject=" + "Новая заявка!" //тема
-             + "&body=" + "Имя и фамилия:" + name + "  Контакты" + contact + "  Иструмент:" + instrument; //текст
+             + "&body=" + "Имя и фамилия:" + name + "  Контакты" + contact + "  Инструмент:" + instrument; //текст
     window.location.href = link;
     return false;
 };

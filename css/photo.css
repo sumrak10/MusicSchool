@@ -1,8 +1,0 @@
-.photo-card {
-    display: flex;
-    flex-wrap: wrap;
-}
-.photo-card img {
-    width: 50%;
-    height: 50%;
-}

@@ -1,0 +1,19 @@
+.photo-card {
+    display: flex;
+    flex-wrap: wrap;
+}
+.photo-card img {
+    width: 50%;
+    height: 50%;
+}
+.video-wrapper {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    flex-direction: column;
+}
+.video-card {
+    position: relative;
+    margin-top: 80px;
+}
