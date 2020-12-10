@@ -197,6 +197,8 @@ header {
 }
 .card-box {
     display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
     flex-wrap: wrap;
     position: relative;
     width: 100%;
@@ -271,23 +273,32 @@ header {
 }
 
 .about {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.about-resp {
     display: flex;
-    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
 }
 .side {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 40%;
-    height: 100%;
+    width: 600px;
+    height: 800px;
 }
 .side div {
-    width: 70%;
+    width: 80%;
     height: 70%;
     background-position: center;
     background-repeat: no-repeat;
@@ -325,6 +336,13 @@ footer {
 }
 .footer div {
     margin: 30px;
+}
+
+
+
+.map {
+    width: 800px;
+    height: 600px;
 }
 
 @font-face {
@@ -422,13 +440,15 @@ footer {
         justify-content: space-around;
         top: 300px;
     }
-    .info:last-child {
-    }
     .logo img {
         width: 100%;
         height: 100%;
     }
     .section {
         font-size: 20px;
+    }
+    .map {
+        width: 100vw;
+        height: 50vh;
     }
 }
