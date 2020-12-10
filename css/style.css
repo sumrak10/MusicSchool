@@ -207,7 +207,7 @@ header {
 }
 .card {
     position: relative;
-    margin: 30px;
+    margin: 20px;
     min-width: 300px;
     min-height: 400px;
     border-radius: 10px;
