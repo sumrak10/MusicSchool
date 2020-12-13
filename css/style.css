@@ -167,7 +167,7 @@ header {
     height: 5em;
 }
 .info div:first-child {
-    font-size: 2.2em;
+    font-size: 2.3em;
     color: white;
     margin-left: 15px;
 }
@@ -438,7 +438,11 @@ footer {
     .info {
         flex-direction: column;
         justify-content: space-around;
-        top: 300px;
+        top: 250px;
+        text-align: center;
+    }
+    .info div:first-child {
+        margin-bottom: 15px;
     }
     .logo img {
         width: 100%;

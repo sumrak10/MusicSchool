@@ -11,6 +11,16 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementsByClassName('menu')[0].classList.add("resp-menu")
         }
     })
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        var elements = document.querySelectorAll(".card");
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].onclick = function(e){
+                e.preventDefault()
+                document.getElementsByClassName('front')[0].style.trasform = "rotateY(-180deg)"
+                document.getElementsByClassName('back')[0].style.trasform = "rotateY(-360deg)"
+            };
+        }
+    }
 })
 
 function sendMail() {
