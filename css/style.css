@@ -241,13 +241,25 @@ header {
 .back {
     box-shadow:  10px 10px 40px #000000;
     background-color: #9d0191;
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);  /* Saf3.1+, Chrome */
+    -moz-transform: rotateY(180deg);  /* FF3.5+ */
+    -ms-transform: rotateY(180deg);  /* IE9 */
+    -o-transform: rotateY(180deg);  /* Opera 10.5+ */
+    transform: rotateY(180deg);  
 }
 .card:hover .front {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);  /* Saf3.1+, Chrome */
+    -moz-transform: rotateY(180deg);  /* FF3.5+ */
+    -ms-transform: rotateY(180deg);  /* IE9 */
+    -o-transform: rotateY(180deg);  /* Opera 10.5+ */
+    transform: rotateY(180deg); 
 }
 .card:hover .back {
-    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);  /* Saf3.1+, Chrome */
+    -moz-transform: rotateY(360deg);  /* FF3.5+ */
+    -ms-transform: rotateY(360deg);  /* IE9 */
+    -o-transform: rotateY(360deg);  /* Opera 10.5+ */
+    transform: rotateY(360deg); 
 }
 .card-image {
     position: relative;
